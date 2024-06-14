@@ -1,0 +1,352 @@
+.mainContent{
+    width:100%;
+    height:100vh;
+    display: flex;
+    background-image:url(D:\pROjects\Reactjs\To-Do-List\src\assets\img.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+.secondaryContent{
+    width:100%;
+    height:100%;
+    position: absolute;
+    display: flex;
+
+}
+
+.leftContent{
+    
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+ 
+}
+
+.profileWithUsername{
+    height:26%;
+    width: 100%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+
+
+.profpicDiv{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.profpic{
+    border-radius: 50%;
+    height: 70%;
+    width: 70%;
+}
+
+
+.usernamediv{
+    height: 100%;
+    width:65%;
+    display: flex;
+    align-items: center;
+
+    font-weight: bold;
+
+}
+.usernamediv h1{
+    font-size: 20px;
+}
+
+
+.animationHomeDiv{
+    
+    height:70%;
+    width: 100%;
+    display: flex;
+    margin: 10px;
+
+
+
+
+}
+.animationHome{
+    display:flex ;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+
+
+}
+
+.animation{
+
+
+    width: 100%;
+}
+
+.rightContent{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+
+   
+
+
+}
+
+.appNameDiv{
+    height: 10vh;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+    
+    
+}
+
+.appName{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appName h1{   
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    
+
+}
+
+.taskListBox{
+    height:80%;
+    width:75%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #D69498;
+    display: flex;
+    flex-direction:column;
+    
+}
+
+.inputContent{
+    width: 95%;
+    height: 10%;
+    display:flex;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 7px;
+    margin-bottom: 20px;
+    
+
+}
+
+.inputContent input{ 
+    width: 100%;
+    height: 100%;
+    border-radius: 110px;
+    border: none;
+    padding-left: 20px;
+    font-size: 15px;
+    background-color: #ffdfe1;
+    
+}
+
+
+.inputContent Button{ 
+    margin-left: 30px;
+    width:15%;
+    height:50px; 
+    border-radius: 25px;
+    background-color: #ffdfe1;
+    box-shadow: 5px 5px 10px #D69498;
+    border: none;
+
+}
+
+.tasklist{
+    height:90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.allTasks{
+    width: 100%;
+    height: 100%;
+}
+
+.tasksdiv{
+    height:25%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    /* margin-right: 10px; */
+}
+
+.taskContent{
+    margin: 10px;
+    width:800px;
+    height: 35px;
+    border-radius: 110px;
+    border: none;
+    font-size: 15px;
+    background-color: #ffdfe1;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-left: 10px;
+    /* gap: 10px; */
+    
+    
+    
+}
+
+.notcompleted{
+    width: 100%;
+    font-size: 16px;
+    justify-content: center;  
+}
+
+.completed{
+    width: 100%;
+    font-size: 16px;
+    justify-content: center;  
+    text-decoration: line-through;
+}
+
+.buttons{
+    height: 35px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+    margin: 10px;
+}
+
+
+.updateButtondiv{
+    width: 50%;
+    height: 100%;
+
+}
+
+.updateButton{
+    width: 100%;
+    height: 100%;
+    border-radius:12px;
+    border: none;
+    background-color: #ffdfe1;
+    box-shadow: 5px 5px 10px #D69498;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteButtondiv{
+    width: 50%;
+    height: 100%;
+}
+.deleteButton{
+    width: 100%;
+    height: 100%;
+    border-radius:12px;
+    border: none;
+    background-color: #ffdfe1;
+    box-shadow: 5px 5px 10px #D69498;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+ul{
+    list-style: none;
+}
+
+
+@media (max-width:900px){
+
+    
+    .profpic{
+        border-radius: 50%;
+        height: 50%;
+        width: 80%;
+    }
+    .usernamediv h2 {
+        font-size: 13  px;
+
+
+    }
+    .appName h1{   
+   
+        font-size:35px;
+        
+    
+    }
+    .tasklist{
+        height:90%;
+        width: 100%;
+
+    }
+
+    .taskContent{
+        
+        font-size: 12px;
+    }
+
+.taskContent span{
+
+    font-size: 13px;
+
+    
+}
+    
+    
+}
+@media (max-width:600px){
+    .usernamediv{
+
+        font-size: 25px;
+
+
+    }
+    .appName h1{   
+   
+        font-size:30px;
+        
+    
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
