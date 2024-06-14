@@ -35,8 +35,6 @@ function Signin() {
           <img src={logo} className='logoSignin' alt='' />
         </div>
         <div className='googlediv'>
-          {/* <Link style={{textDecoration: 'none'}} to="/signin"> */}
-
             <button onClick={handleClick}>
 {/*               this button will show a pop up of our authentication provider to authenticate the user */}
               <img src={google} alt='' className='google' />
@@ -44,11 +42,7 @@ function Signin() {
                 Continue with Google
               </h3>
             </button>
-          {/* </Link> */}
-
         </div>
-        
-    
     </div>
 
     {redirect?navigate("/signin"):console.log("error")}
