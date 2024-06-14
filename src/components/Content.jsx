@@ -129,7 +129,7 @@ function Content() {
                 <div className='buttons'>
                     <div className='updateButtondiv'>
 {/*                       this is the update button  */}
-                    <button className='updateButton' onClick={()=> updatetask(tasks)}> 🖍0 </button>
+                    <button className='updateButton' onClick={()=> updatetask(tasks)}> 🖍 </button>
                     </div>
                     <div className='deleteButtondiv'>
 {/*                       this is the delete button  */}
