@@ -8,6 +8,7 @@ function App() {
   return(
     <BrowserRouter>
         <Routes>
+{/*           added path to each component */}
           <Route path='/' Component={Signin}></Route>
           <Route path='/signin' Component={Content}></Route>
         </Routes>
