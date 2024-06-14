@@ -8,10 +8,6 @@ import { signInWithPopup } from 'firebase/auth'
 import { auth, provider } from './Firebase'
 
 
-
-
-
-
 function Signin() {
   const [redirect, setRedirect]= useState(false)
   const navigate = useNavigate()
@@ -42,6 +38,7 @@ function Signin() {
           {/* <Link style={{textDecoration: 'none'}} to="/signin"> */}
 
             <button onClick={handleClick}>
+{/*               this button will show a pop up of our authentication provider to authenticate the user */}
               <img src={google} alt='' className='google' />
               <h3>
                 Continue with Google
@@ -55,6 +52,7 @@ function Signin() {
     </div>
 
     {redirect?navigate("/signin"):console.log("error")}
+{/*       on successfull sign in page will be redirected,else it will show an error in the console */}
     </div>
   )
 }
