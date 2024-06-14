@@ -6,7 +6,6 @@
     position: relative;
     background-repeat: no-repeat;
     background-size:cover;
-
 }
 
 .secondaryContent{
@@ -14,17 +13,13 @@
     height:100%;
     position: absolute;
     display: flex;
-
 }
 
 .leftContent{
-    
     width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
-
- 
 }
 
 .profileWithUsername{
@@ -57,38 +52,27 @@
     width:65%;
     display: flex;
     align-items: center;
-
     font-weight: bold;
-
 }
 .usernamediv h1{
     font-size: 20px;
 }
 
-
 .animationHomeDiv{
-    
     height:70%;
     width: 100%;
     display: flex;
     margin: 10px;
-
-
-
-
 }
+
 .animationHome{
     display:flex ;
     width: 80%;
     height: 100%;
     align-items: center;
-
-
 }
 
 .animation{
-
-
     width: 100%;
 }
 
@@ -98,10 +82,6 @@
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-
-   
-
-
 }
 
 .appNameDiv{
@@ -110,10 +90,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    
-    
-    
+    margin-top: 10px;   
 }
 
 .appName{
@@ -131,8 +108,6 @@
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    
-
 }
 
 .taskListBox{
@@ -141,8 +116,7 @@
     border-radius: 20px;
     box-shadow: 5px 5px 10px #D69498;
     display: flex;
-    flex-direction:column;
-    
+    flex-direction:column;  
 }
 
 .inputContent{
@@ -153,8 +127,6 @@
     margin-left: 5px;
     margin-right: 7px;
     margin-bottom: 20px;
-    
-
 }
 
 .inputContent input{ 
@@ -165,7 +137,6 @@
     padding-left: 20px;
     font-size: 15px;
     background-color: #ffdfe1;
-    
 }
 
 
@@ -177,7 +148,6 @@
     background-color: #ffdfe1;
     box-shadow: 5px 5px 10px #D69498;
     border: none;
-
 }
 
 .tasklist{
@@ -185,7 +155,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     overflow: auto;
     margin-bottom: 20px;
 }
@@ -200,7 +169,6 @@
     width: 100%;
     display: flex;
     gap: 10px;
-    /* margin-right: 10px; */
 }
 
 .taskContent{
@@ -213,12 +181,7 @@
     background-color: #ffdfe1;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     padding-left: 10px;
-    /* gap: 10px; */
-    
-    
-    
 }
 
 .notcompleted{
@@ -248,7 +211,6 @@
 .updateButtondiv{
     width: 50%;
     height: 100%;
-
 }
 
 .updateButton{
@@ -296,32 +258,23 @@ ul{
     }
     .usernamediv h2 {
         font-size: 13  px;
-
-
     }
     .appName h1{   
-   
         font-size:35px;
-        
-    
     }
     .tasklist{
         height:90%;
         width: 100%;
-
     }
 
     .taskContent{
-        
-        font-size: 12px;
+      font-size: 12px;
     }
 
-.taskContent span{
+    .taskContent span{
 
-    font-size: 13px;
-
-    
-}
+      font-size: 13px;  
+    }
     
     
 }
