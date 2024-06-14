@@ -15,14 +15,17 @@ This To Do web application is designed with simple functionalities such as Creat
 - Users can create an account using email address and password.
 - After Successfull sign-in user will be navigated to To-Do page.
 
-### 2. Creating a Task
+### 2. Create a Task
 - The user can create any task in the input box and click "+" button to list their tasks.
+  
+### 3. Read a Task
+- The user can read any created task which renders automatically from the firestore.
 
-### 3. Update a Task
+### 4. Update a Task
 - The user can update any created task by clicking "🖍" button of that respective task to update it and again click "+" button to list their updated tasks.
 
-### 4. delete a Task
-- The user can delete any created task by clicking "✘" button of that respective task to delete it 
+### 5. Delete a Task
+- The user can delete any created task by clicking "✘" button of that respective task to delete it
 
 ## **About**
 This web application uses firebase firestore to store the users data.The authentication provider this web app uses is Google.This web application is only compatible with PC/Laptop not for Mobiles/Tabs.
