@@ -16,7 +16,8 @@ function Content() {
   const [name,setName] = useState()
   const [profpic,setDp] = useState()
 
-  useEffect(() => {
+  useEffect(() => //updating profile picture and name from user's account
+    {
     const displayData = auth.onAuthStateChanged(user=>{
       if (user) {
         setName(user.displayName)
@@ -29,11 +30,11 @@ function Content() {
 
   return () => displayData()
   },[navigate])
-
+// creating CRUD functionalities
   const taskref = collection(db,'Tasks-Collections')
 
   useEffect(() =>{
-    const gettasks =async() =>{
+    const gettasks =async() =>{ //getting all the document data.that is, tasks in our case
       const data = await getDocs(taskref)
       const filteredData= data.docs.map(doc => ({...doc.data(),id:doc.id}))
       setTasks(filteredData)
@@ -47,27 +48,27 @@ function Content() {
 
   const Onsubmit = async()=>{
     setNewtask('')
-    if(EditTask) {
+    if(EditTask) {//if edittask variable is not null it updates a task
         const updateref = doc(db,'Tasks-Collections',EditTask.id)
         await updateDoc(updateref,{text:Newtask})
         setEditTask(null)
       }
-    else{     
+    else{     //or else it adds a task
     await addDoc(taskref,{ text:Newtask,completed:false})
   }
   }
 
-  const deletetask = async(tasks)=>{
+  const deletetask = async(tasks)=>{ // for deleting a tasks
     const docref = doc(db,'Tasks-Collections',tasks.id)
     await deleteDoc(docref)
   }
 
-  const updatetask=async(tasks) =>{
+  const updatetask=async(tasks) =>{ //defining which task should be updated
     setNewtask(tasks.text)
     setEditTask(tasks)
   }
    
-  const complete = async(tasks)=>{
+  const complete = async(tasks)=>{ //to show the completed and not completed tasks 
     const radioref = doc(db,'Tasks-Collections',tasks.id)
     await updateDoc(radioref,{completed:true})
   }
@@ -106,26 +107,32 @@ function Content() {
           
           <div className='taskListBox'>
             <div className='inputContent'>
+{/*               this is where the users will add their tasks */}
                 <input type='text' placeholder='Enter the task' value={Newtask} onChange={Inputchange}/>
                 <button onClick={Onsubmit}> ✙ </button>                
             </div>
             <div className='tasklist'>
             <ul className='allTasks'>
             {
+{/*               map function is used to renderthe list of tasks */}
             Tasks.map(tasks =>
-            <li key={tasks.id}> 
+            <li //li creates a template for each of the tasks in the list
+              key={tasks.id}> 
               <div className='tasksdiv'> 
               
-                <div className='taskContent'>         
+                <div className='taskContent'>   
+{/*                   this is the radio button */}
                     <input type='radio' name='' id='' onClick={()=> complete(tasks) }checked = {taskref.completed} />
                     <span className={`${tasks.completed? 'completed': "notcompleted"}`} > {tasks.text}</span>
                 </div>
                     
                 <div className='buttons'>
                     <div className='updateButtondiv'>
+{/*                       this is the update button  */}
                     <button className='updateButton' onClick={()=> updatetask(tasks)}> 🖍0 </button>
                     </div>
                     <div className='deleteButtondiv'>
+{/*                       this is the delete button  */}
                     <button className='deleteButton' onClick={()=> deletetask(tasks)}> ✘ </button>
                     </div>
                 </div>
